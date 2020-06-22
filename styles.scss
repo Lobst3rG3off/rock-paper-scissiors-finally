@@ -33,5 +33,12 @@ body {
     margin-left: .1rem;
     font-size: .5rem;
     color: #333333;
-    
+
+}
+.result-selection {
+opacity: .5;
+}
+.result-selection.winner {
+opacity: 1;
+font-size: 1.5rem;
 }
