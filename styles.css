@@ -1,0 +1,28 @@
+body {
+  background-color: #CCC;
+}
+
+.selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.selection:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=styles.css.map */
