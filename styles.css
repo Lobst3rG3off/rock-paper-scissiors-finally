@@ -16,7 +16,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
   -webkit-transition: 100ms;
   transition: 100ms;
 }
@@ -24,5 +24,26 @@ body {
 .selection:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.results {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: .5rem;
+  color: #333333;
 }
 /*# sourceMappingURL=styles.css.map */
