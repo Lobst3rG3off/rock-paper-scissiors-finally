@@ -6,16 +6,19 @@ const SELECTIONS = [
   {
     name: 'rock',
     emoji: '✊',
+    img: 'https://cdn.emojidex.com/emoji/px64/Charmander.png?1469427519',
     beats: 'scissors'
   },
   {
     name: 'paper',
     emoji: '✋',
+    img: 'https://cdn.emojidex.com/emoji/px64/Bulbasaur.png?1469429105',
     beats: 'rock'
   },
   {
     name: 'scissors',
     emoji: '✌',
+    img: 'https://cdn.emojidex.com/emoji/px64/Squirtle.png?1469428690',
     beats: 'paper'
   }
 ]
@@ -45,11 +48,11 @@ function incrementScore(scoreSpan) {
 }
 
 function addSelectionResult(selection, winner) {
-  const div = document.createElement('div')
-  div.innerText = selection.emoji
-  div.classList.add('result-selection')
-  if (winner) div.classList.add('winner')
-  finalColumn.after(div)
+  const img = document.createElement('img')
+  img.src = selection.img
+  img.classList.add('result-selection')
+  if (winner) img.classList.add('winner')
+  finalColumn.after(img)
 }
 
 function isWinner(selection, opponentSelection) {
