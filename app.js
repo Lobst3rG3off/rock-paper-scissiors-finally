@@ -6,7 +6,7 @@ const SELECTIONS = [
   {
     name: 'rock',
     emoji: '✊',
-    img: <img src="https://cdn.emojidex.com/emoji/px64/Charmander.png?1469427519" alt="Charmander">,
+    img: '<img src="https://cdn.emojidex.com/emoji/px64/Charmander.png?1469427519" alt="Charmander">',
     beats: 'scissors'
   },
   {
@@ -47,7 +47,7 @@ function incrementScore(scoreSpan) {
 
 function addSelectionResult(selection, winner) {
   const div = document.createElement('div')
-  div.innerText = selection.img
+  div.innerText = selection.emoji
   div.classList.add('result-selection')
   if (winner) div.classList.add('winner')
   finalColumn.after(div)
