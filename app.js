@@ -6,17 +6,19 @@ const SELECTIONS = [
   {
     name: 'rock',
     emoji: '✊',
-    img: '<img src="https://cdn.emojidex.com/emoji/px64/Charmander.png?1469427519" alt="Charmander">',
+    // img: '<img src="https://cdn.emojidex.com/emoji/px64/Charmander.png?1469427519" alt="Charmander">',
     beats: 'scissors'
   },
   {
     name: 'paper',
     emoji: '✋',
+    img: '<img src="https://cdn.emojidex.com/emoji/px64/Bulbasaur.png?1469429105" alt="Bulbasaur">',
     beats: 'rock'
   },
   {
     name: 'scissors',
     emoji: '✌',
+    img: '<img src="https://cdn.emojidex.com/emoji/px64/Squirtle.png?1469428690" alt="Squirtle">',
     beats: 'paper'
   }
 ]
